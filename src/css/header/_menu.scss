@@ -1,0 +1,33 @@
+.navigation {
+    height: 60px;
+    background-color: $dark-gray;
+    width: 100%;
+
+    #{root} {
+
+        &__menu {
+            display: flex;
+            justify-content: flex-start;  
+            margin: 23px 120px;
+        }
+    
+        &__menu-item {
+            margin-left: 40px;
+            height: 14px;
+    
+            &:first-child  {
+                margin-left: 0;
+            }
+        }
+    
+        &__menu-item-link  {
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;  
+        }
+
+    }
+
+
+  
+}
