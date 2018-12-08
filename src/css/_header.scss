@@ -89,33 +89,34 @@
         }
     }
 
-    &__navigation {
+  &__navigation {
         height: 60px;
         background-color: $dark-gray;
         width: 100%;
+        
+        #{$root}{
 
 
-        ul {
+        &__menu {
             display: flex;
-            justify-content: center;  
-            margin: 23px 0;
+            justify-content: flex-start;  
+            margin: 23px 120px;
         }
 
-        li {
+        &__menu-item {
             margin-left: 40px;
             height: 14px;
 
-            &::nth-last-of-type(li) {
+            &:first-child  {
                 margin-left: 0;
             }
         }
 
-        li a {
+        &__menu-item-link  {
             font-size: 14px;
             font-weight: 400;
             color: $white;  
         }
-
     }
 
 }
